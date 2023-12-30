@@ -4,7 +4,6 @@ import FeaturedCard from './FeaturedCard'
 import { featured } from '../constants'
 
 const FeaturedRow = () => {
-    console.log(featured.restaurants)
     return (
         <View>
             <View className="flex-row items-center justify-between pt-4 px-4">

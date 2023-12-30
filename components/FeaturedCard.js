@@ -1,10 +1,17 @@
 import { StyleSheet, Text, TouchableWithoutFeedback, Image, View } from 'react-native'
 import React from 'react'
 import * as Icon from "react-native-feather"
+import { useNavigation } from '@react-navigation/native'
 
 const FeaturedCard = ({ item }) => {
+
+    const navigation = useNavigation();
+
+
     return (
-        <TouchableWithoutFeedback>
+        <TouchableWithoutFeedback
+            onPress={() => navigation.navigate('Restaurant', { item: item })}
+        >
             <View className="flex mr-6 rounded-xl my-6 mx-3 bg-white  shadow-lg  shadow-gray-400">
                 <Image className="w-64 h-32 rounded-t-xl" source={item ? item.image : ""} />
                 <View className="flex-1  ml-2 py-2">
@@ -20,7 +27,7 @@ const FeaturedCard = ({ item }) => {
                     <Text className="text-xs ml-2 text-gray-600">Naerby {item ? item.address : ""}</Text>
                 </View>
             </View>
-        </TouchableWithoutFeedback>
+        </TouchableWithoutFeedback >
     )
 }
 
