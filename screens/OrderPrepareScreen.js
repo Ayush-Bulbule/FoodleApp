@@ -1,5 +1,7 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React, { useEffect } from 'react'
+import { useNavigation } from '@react-navigation/native'
+import Screen from '../components/Screen';
 
 const OrderPrepareScreen = () => {
     const navigation = useNavigation();
@@ -15,8 +17,9 @@ const OrderPrepareScreen = () => {
     return (
         <Screen>
             <View className="flex-1 justify-center items-center">
-                <Text className="text-2xl font-bold">Your order is being prepared</Text>
-                <Text className="text-xl font-bold">Please wait</Text>
+                <Image source={require("../assets/images/delivery.gif")} className="h-64 w-64" />
+                <Text className="text-sm mt-4">Your order is being prepared...</Text>
+
             </View>
         </Screen>
     )
