@@ -37,20 +37,20 @@
    git clone https://github.com/your-username/Foodle.git
    ```
 2. Navigate to the project directory.
-  ```bash
-  cd Foodle
-  ```
+   ```bash
+     cd Foodle
+   ```
 3. Install the dependencies.
-  ```bash
-  npm install
-  # or
-  yarn install
-  ```
+   ```bash
+     npm install
+     # or
+     yarn install
+   ```
 4. Start the app.
    ```bash
-   npm start
-   # or
-   yarn start
+      npm start
+      # or
+      yarn start
    ```
    
 ### Contribution
