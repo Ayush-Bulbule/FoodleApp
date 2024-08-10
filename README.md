@@ -26,6 +26,10 @@
    - **Manage Orders:** Update the status of orders (e.g., accepted, preparing, delivered).
    - **Total Earnings:** Track and display total earnings for the restaurant.
 
+## Screenshot
+![Foodle App](https://github.com/user-attachments/assets/4d82e20a-bc24-4606-b693-6c4bcefddfb0)
+
+
 ## Installation
 
 1. Clone this repository.
