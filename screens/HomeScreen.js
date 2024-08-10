@@ -31,7 +31,7 @@ const HomeScreen = () => {
           <Icon.Search className="w-6 h-6 mr-2" stroke="gray" />
           <TextInput placeholder="Restaurants" className="ml-2 flex-1" />
           <View className="flex-row items-center space-x-1 border-0 border-l-2 pl-2 border-gray-300">
-            <Icon.MapPin className="w-6 h-6" stroke="gray" />
+            <Icon.MapPin height={20} width={20} className="w-4 h-4" stroke="gray" />
             <Text className="text-gray-400">Katraj,Pune</Text>
           </View>
 
